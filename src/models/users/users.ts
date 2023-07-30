@@ -6,7 +6,7 @@ export class User{
     @Field((type) => ID)
     id: string;
 
-    @Field()
+    @Field((type) => String)
     @IsEmail()
     email: string;
 
@@ -14,6 +14,6 @@ export class User{
     password: string;
 
     @Field((type)=> Date)
-    created: Date;
+    created_at: Date;
 
 }
